@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+    <p th:text="${user.id}"></p>
+    <p th:text="${user.username}"></p>
+</div>
+    <p><a th:href="@{user/updateUser/{id}(id=${user.id})}">Edit</a></p>
+    <p><a href="/logout">Logout</a></p>
+</div>
+</body>
+</html>
